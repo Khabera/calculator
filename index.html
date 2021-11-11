@@ -5,10 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 <body>
-    
+    <div id=calc-body>
+        <div id=running-equation></div>
+        <div id=output-screen>Results go here</div>
+        <!--put the previous input above because I always hate when you cant see what you are multiplying together-->
+        <div id=input-buttons>
+            <div id=function-buttons>
+                <button id=onoff>I/O</button>
+                <button id=clear>Cl</button>
+                <button id=memset>M+</button>
+                <button id=memrecall>MR</button>
+                <button id=memclear>MC</button>
+            </div>
+            <div id=bottom-buttons>
+                <div id=number-buttons>
+                <div class=row>
+                    <button number=0 class=number-button>0</button>
+                    <button class=xw number=. class=number-button>.</button>
+                </div>
+                <div class=row>
+                    <button number=1 class=number-button>1</button>
+                    <button number=2 class=number-button>2</button>
+                    <button number=3 class=number-button>3</button>
+                </div>
+                <div class=row>
+                    <button number=4 class=number-button>4</button>
+                    <button number=5 class=number-button>5</button>
+                    <button number=6 class=number-button>6</button>
+                </div>
+                <div class=row>
+                    <button number=7 class=number-button>7</button>
+                    <button number=8 class=number-button>8</button>
+                    <button number=9 class=number-button>9</button>
+                </div>
+                </div>
+                <div id=operator-buttons>
+                <div class=column>
+                    <button operation='×'>×</button>
+                    <button operation='-'>-</button>
+                    <button class=xl operation='+'>+</button>
+                </div>
+                <div class=column>
+                    <button operation='÷'>÷</button>
+                    <button operation='plusminus'>±</button>
+                    <button class=xl operation='='>=</button>
+                </div>
+                </div>
+            </div>    
+        </div>
+
+    </div>
 </body>
 </html>
