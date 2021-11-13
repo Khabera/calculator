@@ -126,7 +126,7 @@ document.querySelector('#memrecall').addEventListener('click', function(){
     pushDisplay();
 });
 document.querySelector('#onoff').addEventListener('click', function(){
-    let coloredNodes = document.querySelectorAll('.body, #output-screen, #running-equation, #calc-body, button');
+    let coloredNodes = document.querySelectorAll('body, #output-screen, #running-equation, #calc-body, button');
     if(darkMode==false){
         coloredNodes.forEach(button => {
         button.classList.add('class', 'dark')
